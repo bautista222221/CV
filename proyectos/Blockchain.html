@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Blockchain Distribuido | Bautista Pereyra Buch</title>
+  <link rel="stylesheet" href="../styles/portfolio.css" />
+</head>
+<body>
+  <header>
+    <h1>Proyecto Blockchain Distribuido</h1>
+    <nav>
+      <ul>
+        <li><a href="../portfolio.html">⬅ Volver al portfolio</a></li>
+        <li><a href="../index.html">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Descripción del proyecto</h2>
+      <p>
+        Plataforma blockchain distribuida con mecanismo de consenso Proof of Work. Incluye nodos de minería desarrollados para CPU y GPU, desplegados en contenedores y orquestados en Google Cloud Platform.
+      </p>
+    </section>
+
+    <section>
+      <h2>Características principales</h2>
+      <ul>
+        <li>Minado distribuido con múltiples workers</li>
+        <li>Prueba de trabajo implementada en C++ y CUDA</li>
+        <li>Orquestación en Kubernetes</li>
+        <li>Bloques con validación y mempool distribuida</li>
+        <li>Coordinador autónomo para asignación de tareas</li>
+        <li>Utilizacion de Tokens a modo de simulacion de una moneda</li>
+        <li>Entrega de recompensa a worker ganador</li>
+        <li>Competencia entre multiples mineros por la solucion de una prueba de trabajo</li>
+        <li>Nodo coordinador de la aplicación desplegado en GCP, con la posibilidad de tener mineros tanto locales como desplegados</li>
+        <li>Sincronizacion coordinador-mineros mediante servidores NTP</li>
+        <li>Posibilidad de modificar la configuracion de forma simple</li>
+        <li>Persistencia de blockchain y tareas/transacciones pendientes</li>
+        <li>Posibilidad de crear wallets que permiten enviar transacciones a otras</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Galería de imágenes</h2>
+      <div class="galeria">
+        <figure>
+          <img src="../images/BlockChainArq.png" alt="Arquitectura distribuida de blockchain con contenedores" />
+          <figcaption>Arquitectura de red y nodos de minería</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/BlockChain.jpg" alt="Estado de la blockchain">
+            <figcaption>Estado de la blockchain luego de un par de bloques minados</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/MineroGPU.jpg" alt="Logs de minero GPU">
+            <figcaption>Logs del minero GPU al minar una tarea</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/MineroResultado.jpg" alt="Resultado mineria">
+            <figcaption>Resultado de una mineria verificada y agregada a la blockchain</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tecnologías utilizadas</h2>
+      <ul>
+        <li>Lenguajes: Python, C++, CUDA</li>
+        <li>Backend: Flask, Redis, RabbitMQ</li>
+        <li>Infraestructura: Docker, Kubernetes, GCP</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bautista Pereyra Buch</p>
+  </footer>
+</body>
+</html>
